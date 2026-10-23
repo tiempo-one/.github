@@ -10,11 +10,11 @@ pays, classes with seats, recurring bookings that keep their local time through 
 and test and live modes.
 
 ```bash
-npm install @doubletap/tiempo
+npm install @tiempo/sdk
 ```
 
 ```ts
-import { Tiempo } from '@doubletap/tiempo'
+import { Tiempo } from '@tiempo/sdk'
 
 const tiempo = new Tiempo(process.env.TIEMPO_API_KEY!) // a test key, tpt_…
 const shop = tiempo.withAccount('acct_…')
@@ -32,7 +32,7 @@ await shop.bookings.confirm(hold.id)
 
 | Repository | What it is |
 | --- | --- |
-| [tiempo-node](https://github.com/tiempo-one/tiempo-node) | The TypeScript SDK, published on npm as [@doubletap/tiempo](https://www.npmjs.com/package/@doubletap/tiempo) |
+| [tiempo-node](https://github.com/tiempo-one/tiempo-node) | The TypeScript SDK, published on npm as [@tiempo/sdk](https://www.npmjs.com/package/@tiempo/sdk) |
 | [booking-starter](https://github.com/tiempo-one/booking-starter) | A barbershop booking app on Next.js: availability, holds, Stripe or test payments, and a double-booking race test. Fork it |
 
 ## Start here
